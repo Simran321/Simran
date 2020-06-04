@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+	<title>C programming</title>
+	<link rel="stylesheet" href="sem1css.css">
+  <style type="text/css">
+    .grid-container{
+      background-color: #566573 ;
+    }
+  </style>
+</head>
+<body>
+	<div class="topnav" id=mysem1>
+	
+  	<a class="home" href="mca.html"><i class="fa fa-fw fa-home"></i>Home</a>
+  	 <a href="mcasem1.html">Computer Architecture</a>
+      <a href="#">Business Communication</a>
+     <a href="#">Discrete Mathematics</a>
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i></a>
+	</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("mysem1");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+ <div class="welcome">
+      <div class="img">
+      <img src="logo2.png" alt="logo" height="50%" width= "50%">
+      </div>
+      <h1 class="wel">C Programming</h1>
+      
+ </div>
+	<div class="grid-container">
+      	<div class="grid-item">
+            <img src="book.jpg" alt="Avatar" class="image" style="width: 50%">
+            <button class="btn book">Books</button>
+      	</div>
+		    <div class="grid-item">
+      		 <img src="note.jpg" alt="Avatar" class="image" style="width:50%">
+      		<button class="btn note">Notes</button>
+         </div>
+		    <div class="grid-item">
+      		<img src="paper.png" alt="Avatar" class="image" style="width:50%">
+      		<button class="btn paper">Questions Paper</button>
+        </div>  
+  </div>
+
+</body>
+</html>

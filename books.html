@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Books</title>
+	<link rel="stylesheet" href="books.css">
+</head>
+<body>
+	<div class="topnav">
+  <a href="courses.html">Home</a>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+     <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+
+<h1 class="neon" data-text="BOOKS">BOOKS</h1>
+
+<div class="backimg">
+  <img src="book3.jpg" alt="backdrop" height="500px" width= "100%">
+  
+</div>
+<div class="sidenav">
+    <button class="dropdown-btn" >MCA 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://www.iitk.ac.in/esc101/share/downloads/javanotes5.pdf">Java</a>
+      <a href="https://www.freebookcentre.net/programming-books-download/C-Language-Tutorial-(PDF-124P).html">C programming</a>
+      <a href="https://www.ncertbooks.guru/data-structures/#Download_Best_Books_for_Data_Structures_&_Algorithms_for_Beginners">Data Structure</a>
+      <a href="https://it.bmc.uu.se/andlov/dev/books/Operating%20System%20Concepts%206ed.pdf">Operating System</a>
+    </div>
+    <button class="dropdown-btn">MBA 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="http://www.ddegjust.ac.in/studymaterial/mba/cp-104.pdf">Accounting</a>
+      <a href="http://www.sasurieengg.com/e-course-material/MBA/I-Year-Sem-2/BA7204%20HUMAN_RESOURCE_MANAGEMENT.pdf">Human Resource</a>
+      <a href="http://www.sasurieengg.com/e-course-material/MBA/I-Year-Sem-2/BA7204%20HUMAN_RESOURCE_MANAGEMENT.pdf">Marketing</a>
+      <a href="https://www.mgncre.org/pdf/publication/Rural%20Management%20Principles%20and%20Practices%20-%20First%20Edition.pdf">Rural Management</a>
+    </div>
+    <button class="dropdown-btn" >BTECH 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://docs.google.com/file/d/0B7OQo6ncgyFjbW53VEJEclZuSzQ/edit">Machine Design</a>
+      <a href="https://bookspdf.pnpntransistor.com/2019/02/basic-electronics-by-bl-thareja-pdf-download.html">Electronics</a>
+      <a href="http://www.freebookcentre.net/chemistry-books-download/Applied-Chemistry-(PDF-296P).html">Chemistry</a>
+      <a href="https://www.mcgoodwin.net/pages/thermodynamics.pdf">Thermodynamics</a>
+    </div>
+    <button class="dropdown-btn" >MTECH 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://crescent.education/wp-content/uploads/2017/09/M.Tech-Software-EnggCSE-new.pdf">Sotware Eng.</a>
+      <a href="http://vssut.ac.in/lecture_notes/lecture1428551222.pdf">Algorithm</a>
+      <a href="http://group27.narod.ru/ucheba/files/McGraw_Hill-Project_Management.pdf">Project Management</a>
+      <a href="https://holub.com/goodies/compiler/compilerDesignInC.pdf">Compiler Design</a>
+    </div>
+  </ul>
+</div>
+
+<script>
+  
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+  var i;
+  
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+    dropdownContent.style.display = "none";
+    } else {
+    dropdownContent.style.display = "block";
+    }
+    });
+  }
+  </script>
+</body>
+</html>
